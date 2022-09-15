@@ -41,7 +41,17 @@ for ($i = 0; $i <count($aluno) ; $i++ ) {
             <td>{$aluno[$i]['nome']} </td>
             <td>{$aluno[$i]['semestre']} </td>
             </tr>";
-    
-}
 
-echo '</table>';
+}
+            foreach( $aluno as $ind => $val ){
+
+              echo " <tr>
+              
+              <td>{$val}['Matrícula']</td>
+              <td>{$val}['Nome']</td>
+              <td>{$val}['Semestre']</td>
+       
+                      </tr>;"
+}
+       
+       echo '</table>';
