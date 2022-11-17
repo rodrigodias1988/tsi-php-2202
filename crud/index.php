@@ -1,4 +1,7 @@
 <?php
+//Controle de acesso/sessão
+require_once '../controleDeSessao/controle.php';
+
 require_once('../bancoDeDados/conecta.php');
 
 $stmt = $bd->query('SELECT id, nome, turno, inicio FROM alunos');  

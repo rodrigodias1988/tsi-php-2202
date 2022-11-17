@@ -1,5 +1,7 @@
 <?php
 //BUSCANDO O COD DA CONEXAO COM O BANCO DE DADOS
+//Controle de acesso/sessão
+require_once '../controleDeSessao/controle.php';
 
 require_once '../BancoDeDados/conecta.php';
 //include(); incluir 
